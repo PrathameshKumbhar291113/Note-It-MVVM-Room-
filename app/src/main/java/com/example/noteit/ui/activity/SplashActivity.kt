@@ -1,4 +1,4 @@
-package com.example.noteit
+package com.example.noteit.ui.activity
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         lifecycleScope.launch {
-            delay(3000)
+            delay(1000)
             val i : Intent = Intent(this@SplashActivity, HomeActivity::class.java)
             startActivity(i)
             finish()
